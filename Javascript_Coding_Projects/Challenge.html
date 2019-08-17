@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Properties and Methods</title>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p>Click to see what's inside!.</p>
+
+        <button onclick="myBodyFunction()">Try it</button>
+        
+        <p id="bod"></p>
+        
+        <script>
+        function myBodyFunction() {
+            var x = document.body.innerHTML;
+            document.getElementById("bod").innerHTML = x;
+        }
+        </script>
+    </body>
+</html>
